@@ -1,0 +1,27 @@
+header {
+	.nav-link {
+		color: $ColorFont-300;
+		padding: 0.5rem 0.5rem;
+	}
+
+	.nav-link::after {
+		content: "";
+		border-right: 1px solid;
+		margin-left: 10px;
+	}
+
+	.nav-item:nth-child(4) {
+		.nav-link::after {
+			content: none;
+		}
+	}
+
+	.login {
+		background-color: $ColorBackground-100;
+		border-radius: 50%;
+	}
+	.login-member {
+		background: white;
+		border-radius: 50%;
+	}
+}
