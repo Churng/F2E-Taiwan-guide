@@ -176,4 +176,51 @@ main .weatherbar {
 main .weatherbar .title {
   width: 70%;
 }
+
+main .shadow-box:hover {
+  -webkit-box-shadow: 8px 5px 7px #00000038, inset 0px -20px 3px #00000038;
+          box-shadow: 8px 5px 7px #00000038, inset 0px -20px 3px #00000038;
+  border-radius: 20px;
+  -webkit-transform: translate(-2px, -4px);
+          transform: translate(-2px, -4px);
+  cursor: pointer;
+}
+
+.mySwiper {
+  width: calc(100vw - 200px);
+  margin: 0 auto;
+  position: unset;
+}
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  left: auto;
+  position: absolute;
+  background: #dcdcdc 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.mySwiper .swiper-button-next {
+  right: -5%;
+}
+
+.mySwiper .swiper-button-next:after {
+  content: "next";
+  left: 40%;
+  font-size: 20px;
+  color: gray;
+}
+
+.mySwiper .swiper-button-prev {
+  left: -5%;
+}
+
+.mySwiper .swiper-button-prev:after {
+  content: "prev";
+  left: 40%;
+  font-size: 20px;
+  color: gray;
+}
 /*# sourceMappingURL=style.css.map */

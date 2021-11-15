@@ -6,7 +6,7 @@ import LoginIcon from "../public/icon/icon/person.svg";
 export default function header({ children }) {
 	return (
 		<>
-			<header className="d-flex flex-wrap justify-content-end py-4  sticky-top">
+			<header className="d-flex flex-wrap justify-content-end py-4 px-3 sticky-top">
 				<h1 className="hidden"></h1>
 
 				<ul className="nav nav-pills">
