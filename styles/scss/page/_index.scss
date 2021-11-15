@@ -17,5 +17,8 @@ main {
 		border-radius: 20px;
 		transform: translate(-2px, -4px);
 		cursor: pointer;
+		@media (min-width: 1320px) {
+			width: 91%;
+		}
 	}
 }

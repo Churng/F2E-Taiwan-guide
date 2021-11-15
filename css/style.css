@@ -186,6 +186,12 @@ main .shadow-box:hover {
   cursor: pointer;
 }
 
+@media (min-width: 1320px) {
+  main .shadow-box:hover {
+    width: 91%;
+  }
+}
+
 .mySwiper {
   width: calc(100vw - 200px);
   margin: 0 auto;
