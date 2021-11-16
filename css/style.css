@@ -168,6 +168,11 @@ header .login-member {
   background: linear-gradient(0deg, #a7d4da 0%, rgba(167, 212, 218, 0) 89.54%);
 }
 
+.copyright {
+  background-color: #6e9292;
+  color: white;
+}
+
 main main .contain {
   margin-top: -5em;
 }
