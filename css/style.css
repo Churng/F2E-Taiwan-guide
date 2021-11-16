@@ -163,6 +163,11 @@ header .login-member {
   border-radius: 50%;
 }
 
+.footer {
+  background: -webkit-gradient(linear, left bottom, left top, from(#a7d4da), color-stop(89.54%, rgba(167, 212, 218, 0)));
+  background: linear-gradient(0deg, #a7d4da 0%, rgba(167, 212, 218, 0) 89.54%);
+}
+
 main main .contain {
   margin-top: -5em;
 }
