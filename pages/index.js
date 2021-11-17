@@ -4,6 +4,8 @@ import Image from "next/image";
 import Header from "../share/Header";
 import Footer from "../share/Footer";
 import Swiper from "../component/Swiper";
+import Cardplace from "../component/section/card-place";
+import Button from "react-bootstrap/Button";
 // 圖片
 import banner from "../public/image/index-background-1.png";
 import food from "../public/image/food.png";
@@ -23,11 +25,11 @@ export default function Home() {
 				<Header />
 				<main>
 					<div className="contain">
-						<Image src={banner} objectPosition="center" alt="photo" className="d-block" />
+						<Image src={banner} layout="responsive" alt="photo" className="d-block" />
 					</div>
 
 					<div className="weatherbar d-flex flex-column  align-items-center">
-						<p className="text-center title mx-auto">
+						<p className="text-center title mx-auto lh-base">
 							台灣許多美景媲美國外，值此五倍券、國旅券及觀光業者加碼優惠盡出之際，旅行台灣就是現在！
 							到哪裡旅遊還沒有想法的民眾，歡迎到台灣觀光，體驗「台灣之美」!
 						</p>
@@ -57,6 +59,16 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
+					</div>
+
+					<div className="block">
+						<div className="container-fluid card-group mt-5">
+							<div className="w-100 d-flex justify-content-between py-2 px-3">
+								<p className="fs-2 fw-bold">熱門景點</p>
+								<Button variant="outline-light">查看更多</Button>
+							</div>
+						</div>
+						<Cardplace />
 					</div>
 				</main>
 			</main>

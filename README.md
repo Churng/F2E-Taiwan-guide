@@ -38,3 +38,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 plugins
 1.yarn add bootstrap@next (https://medium.com/frontendweb/how-to-add-bootstrap-in-next-js-de997371fd9c)
 2.npm install sass
+
+3.https://react-bootstrap.netlify.app/components/buttons/#button-props

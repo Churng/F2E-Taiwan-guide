@@ -1,0 +1,46 @@
+.card-group {
+	background-color: $ColorPublic-100;
+	p {
+		color: white;
+	}
+}
+
+// card-place
+
+.cardplace {
+	.looknum {
+		background-color: rgb(255, 255, 255);
+		width: 45%;
+		padding: 0.4em 0.5em;
+		border-radius: 50px;
+		z-index: 1;
+		margin: 1em;
+	}
+
+	.book {
+		display: flex;
+		justify-content: center;
+		background-color: rgb(255, 255, 255);
+		padding: 0.4em 0.5em;
+		border-radius: 50px;
+		position: absolute;
+		z-index: 1;
+		right: 18 px;
+		z-index: 1;
+		margin: 1em;
+	}
+
+	.name {
+		width: 100%;
+		color: white;
+		background-color: #00000066;
+		position: ABSOLUTE;
+		bottom: 3px;
+		padding: 10px;
+		border-radius: 0 0 20px 20px;
+		overflow: hidden;
+		Image {
+			fill: white;
+		}
+	}
+}

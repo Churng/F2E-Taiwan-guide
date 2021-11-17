@@ -180,11 +180,11 @@ main main .contain {
 main .weatherbar {
   background: -webkit-gradient(linear, left top, left bottom, from(#a7d4da), to(rgba(167, 212, 218, 0)));
   background: linear-gradient(180deg, #a7d4da 0%, rgba(167, 212, 218, 0) 100%);
-  margin-top: -4px;
+  margin-top: -1px;
 }
 
 main .weatherbar .title {
-  width: 70%;
+  width: 43em;
 }
 
 main .shadow-box:hover {
@@ -200,6 +200,55 @@ main .shadow-box:hover {
   main .shadow-box:hover {
     width: 91%;
   }
+}
+
+.card-group {
+  background-color: #6e9292;
+}
+
+.card-group p {
+  color: white;
+}
+
+.cardplace .looknum {
+  background-color: white;
+  width: 45%;
+  padding: 0.4em 0.5em;
+  border-radius: 50px;
+  z-index: 1;
+  margin: 1em;
+}
+
+.cardplace .book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  padding: 0.4em 0.5em;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 1;
+  right: 18 px;
+  z-index: 1;
+  margin: 1em;
+}
+
+.cardplace .name {
+  width: 100%;
+  color: white;
+  background-color: #00000066;
+  position: ABSOLUTE;
+  bottom: 3px;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+.cardplace .name Image {
+  fill: white;
 }
 
 .mySwiper {
