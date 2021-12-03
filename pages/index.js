@@ -5,6 +5,8 @@ import Header from "../share/Header";
 import Footer from "../share/Footer";
 import Swiper from "../component/Swiper";
 import Cardplace from "../component/section/card-place";
+import Cardfoodstay from "../component/section/card-food-stay";
+import Cardstay from "../component/section/card-stay";
 import Button from "react-bootstrap/Button";
 // 圖片
 import banner from "../public/image/index-background-1.png";
@@ -39,22 +41,22 @@ export default function Home() {
 					<div className="container">
 						<div className="row">
 							<div className="col-3 px-2 ">
-								<div className="shadow-box">
+								<div className="shadow-box d-flex justify-content-center">
 									<Image src={attraction} alt="photo" />
 								</div>
 							</div>
 							<div className="col-3 px-2">
-								<div className="shadow-box">
+								<div className="shadow-box d-flex justify-content-center">
 									<Image src={food} alt="photo" />
 								</div>
 							</div>
 							<div className="col-3 px-2">
-								<div className="shadow-box">
+								<div className="shadow-box d-flex justify-content-center">
 									<Image src={accommodation} alt="photo" />
 								</div>
 							</div>
 							<div className="col-3 px-2">
-								<div className="shadow-box">
+								<div className="shadow-box d-flex justify-content-center">
 									<Image src={traffic} alt="photo" />
 								</div>
 							</div>
@@ -69,6 +71,26 @@ export default function Home() {
 							</div>
 						</div>
 						<Cardplace />
+					</div>
+
+					<div className="block">
+						<div className="container-fluid card-group-food mt-5">
+							<div className="w-100 d-flex justify-content-between py-2 px-3">
+								<p className="fs-2 fw-bold">熱門美食</p>
+								<Button variant="outline-light">查看更多</Button>
+							</div>
+						</div>
+						<Cardfoodstay />
+					</div>
+
+					<div className="block">
+						<div className="container-fluid card-group-stay mt-5">
+							<div className="w-100 d-flex justify-content-between py-2 px-3">
+								<p className="fs-2 fw-bold">住宿推薦</p>
+								<Button variant="outline-light">查看更多</Button>
+							</div>
+						</div>
+						<Cardstay />
 					</div>
 				</main>
 			</main>

@@ -40,3 +40,7 @@ plugins
 2.npm install sass
 
 3.https://react-bootstrap.netlify.app/components/buttons/#button-props
+
+4.https://image-component.nextjs.gallery/ ```image使用方式```
+
+5. 設計稿 https://www.figma.com/file/XQu4FznMVcRwa6Vvp8Z0Q3/%E5%8F%B0%E7%81%A3%E6%97%85%E9%81%8A%E5%B0%8E%E8%A6%BD?node-id=0%3A1

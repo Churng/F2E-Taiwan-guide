@@ -44,7 +44,7 @@ export default function header({ children }) {
 						</Link>
 					</li>
 					<li className="nav-item p-1 login-member">
-						<Link href="#">
+						<Link href="/login">
 							<a>
 								<Image src={LoginIcon} alt="Search Somthing" />
 							</a>

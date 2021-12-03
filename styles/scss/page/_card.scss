@@ -5,12 +5,25 @@
 	}
 }
 
+.card-group-food {
+	background-color: $ColorPublic-400;
+	p {
+		color: white;
+	}
+}
+
+.card-group-stay {
+	background-color: $ColorPublic-600;
+	p {
+		color: white;
+	}
+}
 // card-place
 
 .cardplace {
 	.looknum {
 		background-color: rgb(255, 255, 255);
-		width: 45%;
+		width: 40%;
 		padding: 0.4em 0.5em;
 		border-radius: 50px;
 		z-index: 1;
@@ -37,10 +50,53 @@
 		position: ABSOLUTE;
 		bottom: 3px;
 		padding: 10px;
-		border-radius: 0 0 20px 20px;
+		border-radius: 0 0 30px 30px;
 		overflow: hidden;
-		Image {
-			fill: white;
+	}
+
+	.photo {
+		width: 100%;
+		padding-bottom: calc(100% / 8 * 9);
+	}
+}
+
+// card-food-stay
+
+.card-food-stay {
+	.looknum {
+		background-color: rgb(255, 255, 255);
+		width: 40%;
+		padding: 0.4em 0.5em;
+		border-radius: 50px;
+		z-index: 1;
+		margin: 1em;
+	}
+
+	.book {
+		display: flex;
+		justify-content: center;
+		background-color: rgb(255, 255, 255);
+		padding: 0.4em 0.5em;
+		border-radius: 50px;
+		position: absolute;
+		z-index: 1;
+		right: 18 px;
+		z-index: 1;
+		margin: 1em;
+	}
+
+	.name {
+		width: 100%;
+		color: #00000066;
+		border: 1px solid #00000066;
+		// position: ABSOLUTE;
+		bottom: 0;
+		padding: 10px;
+		border-radius: 0 0 30px 30px;
+		overflow: hidden;
+		.title,
+		.location {
+			color: $ColorFont-200;
 		}
 	}
 }

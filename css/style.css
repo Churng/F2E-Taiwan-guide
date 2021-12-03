@@ -173,6 +173,32 @@ header .login-member {
   color: white;
 }
 
+.login .title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.login .info {
+  width: 50%;
+}
+
+.login .register {
+  width: 60%;
+}
+
+.login .block {
+  background-color: #f8f8f8;
+  -webkit-box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.login .social {
+  width: 160px;
+  background-color: white;
+  border-radius: 10px;
+}
+
 main main .contain {
   margin-top: -5em;
 }
@@ -210,9 +236,25 @@ main .shadow-box:hover {
   color: white;
 }
 
+.card-group-food {
+  background-color: #738677;
+}
+
+.card-group-food p {
+  color: white;
+}
+
+.card-group-stay {
+  background-color: #c2bb96;
+}
+
+.card-group-stay p {
+  color: white;
+}
+
 .cardplace .looknum {
   background-color: white;
-  width: 45%;
+  width: 40%;
   padding: 0.4em 0.5em;
   border-radius: 50px;
   z-index: 1;
@@ -243,12 +285,54 @@ main .shadow-box:hover {
   position: ABSOLUTE;
   bottom: 3px;
   padding: 10px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
   overflow: hidden;
 }
 
-.cardplace .name Image {
-  fill: white;
+.cardplace .photo {
+  width: 100%;
+  padding-bottom: calc(100% / 8 * 9);
+}
+
+.card-food-stay .looknum {
+  background-color: white;
+  width: 40%;
+  padding: 0.4em 0.5em;
+  border-radius: 50px;
+  z-index: 1;
+  margin: 1em;
+}
+
+.card-food-stay .book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  padding: 0.4em 0.5em;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 1;
+  right: 18 px;
+  z-index: 1;
+  margin: 1em;
+}
+
+.card-food-stay .name {
+  width: 100%;
+  color: #00000066;
+  border: 1px solid #00000066;
+  bottom: 0;
+  padding: 10px;
+  border-radius: 0 0 30px 30px;
+  overflow: hidden;
+}
+
+.card-food-stay .name .title,
+.card-food-stay .name .location {
+  color: gray;
 }
 
 .mySwiper {

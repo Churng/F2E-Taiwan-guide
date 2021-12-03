@@ -7,9 +7,7 @@ import eye from "../../public/icon/icon/eye.svg";
 import lovetag from "../../public/icon/icon/lovetag.svg";
 import location from "../../public/icon/icon/location.svg";
 // 圖片
-import place_1 from "../../public/image/img-card-1.png";
-import place_2 from "../../public/image/img-card-2.png";
-import place_3 from "../../public/image/img-card-3.png";
+import stay_1 from "../../public/image/img-card-food-3.png";
 
 export default function Cardplace() {
 	return (
@@ -17,7 +15,7 @@ export default function Cardplace() {
 			<div className="container my-5">
 				<div className="row cardplace">
 					<div className="col-4 ">
-						<div className="position-relative">
+						<div className="position-relative rounded ">
 							<div className="looknum d-flex align-items-center position-absolute top-0 start-0 ">
 								<Image src={love} alt="icon" />
 								<span className="mx-2">45</span>
@@ -28,7 +26,16 @@ export default function Cardplace() {
 							<div className="book position-absolute top-0 end-0">
 								<Image src={lovetag} alt="icon" />
 							</div>
-							<Image src={place_1} alt="photo" />
+							<div className="position-relative photo">
+								<Image
+									src={stay_1}
+									alt="photo"
+									layout="fill"
+									objectFit="cover"
+									width={300}
+									height={400}
+								/>
+							</div>
 
 							<div className="name d-flex justify-content-between align-items-center ">
 								<p className="fs-1">台北101</p>
@@ -40,7 +47,7 @@ export default function Cardplace() {
 						</div>
 					</div>
 					<div className="col-4 ">
-						<div className="position-relative">
+						<div className="position-relative rounded ">
 							<div className="looknum d-flex align-items-center position-absolute top-0 start-0 ">
 								<Image src={love} alt="icon" />
 								<span className="mx-2">45</span>
@@ -51,7 +58,16 @@ export default function Cardplace() {
 							<div className="book position-absolute top-0 end-0">
 								<Image src={lovetag} alt="icon" />
 							</div>
-							<Image src={place_1} alt="photo" />
+							<div className="position-relative photo">
+								<Image
+									src={stay_1}
+									alt="photo"
+									layout="fill"
+									objectFit="cover"
+									width={416}
+									height={300}
+								/>
+							</div>
 
 							<div className="name d-flex justify-content-between align-items-center ">
 								<p className="fs-1">台北101</p>
@@ -63,7 +79,7 @@ export default function Cardplace() {
 						</div>
 					</div>
 					<div className="col-4 ">
-						<div className="position-relative">
+						<div className="position-relative rounded ">
 							<div className="looknum d-flex align-items-center position-absolute top-0 start-0 ">
 								<Image src={love} alt="icon" />
 								<span className="mx-2">45</span>
@@ -74,7 +90,16 @@ export default function Cardplace() {
 							<div className="book position-absolute top-0 end-0">
 								<Image src={lovetag} alt="icon" />
 							</div>
-							<Image src={place_1} alt="photo" />
+							<div className="position-relative photo">
+								<Image
+									src={stay_1}
+									alt="photo"
+									layout="fill"
+									objectFit="cover"
+									width={300}
+									height={400}
+								/>
+							</div>
 
 							<div className="name d-flex justify-content-between align-items-center ">
 								<p className="fs-1">台北101</p>

@@ -1,0 +1,25 @@
+.login {
+	.title {
+		font-size: 48px;
+		font-weight: 700;
+	}
+
+	.info {
+		width: 50%;
+	}
+
+	.register {
+		width: 60%;
+	}
+	.block {
+		background-color: $ColorBackground-300;
+		box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.25);
+		border-radius: 5px;
+	}
+
+	.social {
+		width: 160px;
+		background-color: $ColorBackground-100;
+		border-radius: 10px;
+	}
+}
