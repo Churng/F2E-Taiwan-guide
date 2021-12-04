@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 
 // 圖片
 import ImgL from "../public/image/img-rechange-L.png";
+import Logo from "../public/Logo-2.png";
 import person from "../public/image/img-login-photo.png";
 import socail_g from "../public/icon/socail-icon/icon-google.svg";
 import socail_f from "../public/icon/socail-icon/icon-facebook.svg";
@@ -25,10 +26,27 @@ export default function login() {
 								src={ImgL}
 								alt="photo"
 								layout="fill"
-								objectFit="contain"
+								objectFit="cover"
+								objectPosition="25% 30%"
 								width="100%"
 								height="100%^"
 							/>
+							<div
+								className="position-absolute top-50 start-50 translate-middle"
+								style={{ width: "80%", height: "30%" }}
+							>
+								<div className="position-relative w-100 h-100">
+									<Image
+										src={Logo}
+										alt="photo"
+										layout="fill"
+										objectFit="contain"
+										// objectPosition="25% 30%"
+										width="100%"
+										height="100%^"
+									/>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div className="col-12 col-md-7">
