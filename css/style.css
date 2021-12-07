@@ -178,12 +178,28 @@ header .login-member {
   font-weight: 700;
 }
 
-.login .info {
-  width: 50%;
+@media (min-width: 320px) {
+  .login .info {
+    width: 80%;
+  }
 }
 
-.login .register {
-  width: 60%;
+@media (min-width: 526px) {
+  .login .info {
+    width: 50%;
+  }
+}
+
+@media (min-width: 320px) {
+  .login .register {
+    width: 80%;
+  }
+}
+
+@media (min-width: 526px) {
+  .login .register {
+    width: 60%;
+  }
 }
 
 .login .block {
@@ -197,6 +213,18 @@ header .login-member {
   width: 160px;
   background-color: white;
   border-radius: 10px;
+}
+
+@media (min-width: 320px) {
+  .login .bg-image {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 526px) {
+  .login .bg-image {
+    width: 40vw;
+  }
 }
 
 main main .contain {

@@ -21,7 +21,7 @@ export default function login() {
 			<div className="container-fluid p-0">
 				<div className="row g-0">
 					<div className="col-12 col-md-5">
-						<div className="" style={{ position: "relative", width: "40vw", height: "100vh" }}>
+						<div className="bg-image" style={{ position: "relative", height: "100vh" }}>
 							<Image
 								src={ImgL}
 								alt="photo"
@@ -50,55 +50,58 @@ export default function login() {
 						</div>
 					</div>
 					<div className="col-12 col-md-7">
-						<form className="d-flex flex-column align-items-center mx-auto info pt-5">
-							<h2 className="title my-4">登入</h2>
-							<div className=" mb-5 ">
-								<Image src={person} alt="photo" className="roundedCircle"></Image>
-							</div>
-							<div className="input-group mb-5">
-								<span className="input-group-text" id="basic-addon1">
-									@
-								</span>
-								<input
-									type="text"
-									className="form-control"
-									placeholder="Username"
-									aria-label="Username"
-									aria-describedby="basic-addon1"
-								/>
-							</div>
-							<div className="input-group mb-5">
-								<span className="input-group-text" id="basic-addon1">
-									@
-								</span>
-								<input
-									type="text"
-									className="form-control"
-									placeholder="Username"
-									aria-label="Username"
-									aria-describedby="basic-addon1"
-								/>
-							</div>
-							<Button variant="outline-secondary">登入</Button>
-						</form>
-						<div className="register d-flex flex-column  mx-auto mt-5">
-							<p className="fs-3">註冊</p>
-							<div className="block p-3 d-flex justify-content-evenly mt-2">
-								<div className="d-flex social p-2">
-									<div className="">
-										<Image src={socail_g} alt="socail" width={30} height={30}></Image>
-									</div>
-									<p className="fs-3 ms-2">google</p>
+						<form className="">
+							<div className="info d-flex flex-column align-items-center mx-auto  py-5">
+								<h2 className="title my-4">登入</h2>
+								<div className=" mb-5 ">
+									<Image src={person} alt="photo" className="roundedCircle"></Image>
 								</div>
+								<div className="input-group mb-5">
+									<span className="input-group-text" id="basic-addon1">
+										@
+									</span>
+									<input
+										type="text"
+										className="form-control"
+										placeholder="Username"
+										aria-label="Username"
+										aria-describedby="basic-addon1"
+									/>
+								</div>
+								<div className="input-group mb-5">
+									<span className="input-group-text" id="basic-addon1">
+										@
+									</span>
+									<input
+										type="text"
+										className="form-control"
+										placeholder="Username"
+										aria-label="Username"
+										aria-describedby="basic-addon1"
+									/>
+								</div>
+								<Button variant="outline-secondary">登入</Button>
+							</div>
 
-								<div className="d-flex social p-2">
-									<div className="">
-										<Image src={socail_f} alt="socail" width={30} height={30}></Image>
+							<div className="register d-flex flex-column  mx-auto mt-5">
+								<p className="fs-3">註冊</p>
+								<div className="block p-3 d-flex justify-content-evenly mt-2">
+									<div className="d-flex social p-2">
+										<div className="">
+											<Image src={socail_g} alt="socail" width={30} height={30}></Image>
+										</div>
+										<p className="fs-3 ms-2">google</p>
 									</div>
-									<p className="fs-3 ms-2">facebook</p>
+
+									<div className="d-flex social p-2">
+										<div className="">
+											<Image src={socail_f} alt="socail" width={30} height={30}></Image>
+										</div>
+										<p className="fs-3 ms-2">facebook</p>
+									</div>
 								</div>
 							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
