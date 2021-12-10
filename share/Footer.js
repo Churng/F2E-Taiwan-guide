@@ -3,9 +3,9 @@ import Logo from "../public/Logo.png";
 export default function footer({ children }) {
 	return (
 		<>
-			<div className="container-fluid footer">
-				<footer className="row row-cols-5  px-5 py-5 mt-5 me-1">
-					<div className="col">
+			<div className="container-fluid footer ">
+				<footer className="row row-cols-5  px-5 py-5 mt-5 me-1 ">
+					<div className="col d-none d-md-block">
 						<h5 className="text-start mb-3 fs-5 fw-bold">活動新訊</h5>
 						<ul className="nav flex-column">
 							<li className="nav-item mb-2">
@@ -25,7 +25,7 @@ export default function footer({ children }) {
 							</li>
 						</ul>
 					</div>
-					<div className="col">
+					<div className="col d-none d-md-block">
 						<h5 className="text-start mb-3 fs-5 fw-bold">景點</h5>
 						<ul className="nav flex-column">
 							<li className="nav-item mb-2">
@@ -45,7 +45,7 @@ export default function footer({ children }) {
 							</li>
 						</ul>
 					</div>
-					<div className="col ">
+					<div className="col d-none d-md-block">
 						<h5 className="text-start mb-3 fs-5 fw-bold">美食</h5>
 						<ul className="nav flex-column">
 							<li className="nav-item mb-2">
@@ -75,7 +75,7 @@ export default function footer({ children }) {
 							</li>
 						</ul>
 					</div>
-					<div className="col">
+					<div className="col d-none d-md-block">
 						<h5 className="text-start mb-3 fs-5 fw-bold">住宿</h5>
 						<ul className="nav flex-column">
 							<li className="nav-item mb-2">
@@ -100,7 +100,7 @@ export default function footer({ children }) {
 							</li>
 						</ul>
 					</div>
-					<div className="col">
+					<div className="col d-none d-md-block">
 						<h5 className="text-start mb-3 fs-5 fw-bold">交通</h5>
 						<ul className="nav flex-column">
 							<li className="nav-item mb-2">

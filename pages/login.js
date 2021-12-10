@@ -9,7 +9,8 @@ import Logo from "../public/Logo-2.png";
 import person from "../public/image/img-login-photo.png";
 import socail_g from "../public/icon/socail-icon/icon-google.svg";
 import socail_f from "../public/icon/socail-icon/icon-facebook.svg";
-
+import person_1 from "../public/icon/icon/person-1.svg";
+import lock from "../public/icon/icon/lock.svg";
 export default function login() {
 	return (
 		<div className="login">
@@ -54,29 +55,34 @@ export default function login() {
 							<div className="info d-flex flex-column align-items-center mx-auto  py-5">
 								<h2 className="title my-4">登入</h2>
 								<div className=" mb-5 ">
-									<Image src={person} alt="photo" className="roundedCircle"></Image>
+									<Image
+										src={person}
+										alt="photo"
+										placeholder="blur"
+										className="roundedCircle"
+									></Image>
 								</div>
 								<div className="input-group mb-5">
 									<span className="input-group-text" id="basic-addon1">
-										@
+										<Image src={person_1} alt="icon"></Image>
 									</span>
 									<input
 										type="text"
 										className="form-control"
-										placeholder="Username"
-										aria-label="Username"
+										placeholder="user@mail.com"
+										aria-label="user@mail.com"
 										aria-describedby="basic-addon1"
 									/>
 								</div>
 								<div className="input-group mb-5">
 									<span className="input-group-text" id="basic-addon1">
-										@
+										<Image src={lock} alt="icon"></Image>
 									</span>
 									<input
 										type="text"
 										className="form-control"
-										placeholder="Username"
-										aria-label="Username"
+										placeholder="請輸入密碼"
+										aria-label="請輸入密碼"
 										aria-describedby="basic-addon1"
 									/>
 								</div>
@@ -84,20 +90,24 @@ export default function login() {
 							</div>
 
 							<div className="register d-flex flex-column  mx-auto mt-5">
-								<p className="fs-3">註冊</p>
+								<p className="fs-4 fw-bold">註冊</p>
 								<div className="block p-3 d-flex justify-content-evenly mt-2">
 									<div className="d-flex social p-2">
-										<div className="">
-											<Image src={socail_g} alt="socail" width={30} height={30}></Image>
-										</div>
-										<p className="fs-3 ms-2">google</p>
+										<Link href="#">
+											<a>
+												<Image src={socail_g} alt="socail" className="icon"></Image>
+											</a>
+										</Link>
+										<p className="ms-2 socail-font">google</p>
 									</div>
 
 									<div className="d-flex social p-2">
-										<div className="">
-											<Image src={socail_f} alt="socail" width={30} height={30}></Image>
-										</div>
-										<p className="fs-3 ms-2">facebook</p>
+										<Link href="#" className="d-none">
+											<a>
+												<Image src={socail_f} alt="socail" className="icon"></Image>
+											</a>
+										</Link>
+										<p className="ms-2 socail-font">facebook</p>
 									</div>
 								</div>
 							</div>

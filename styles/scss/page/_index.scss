@@ -6,8 +6,17 @@ main {
 	.weatherbar {
 		background: linear-gradient(180deg, #a7d4da 0%, rgba(167, 212, 218, 0) 100%);
 		margin-top: -1px;
-		.title {
-			width: 43em;
+		@media (min-width: 320px) {
+			.title {
+				width: 12em;
+				text-align: center;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.title {
+				width: 43em;
+			}
 		}
 	}
 

@@ -14,7 +14,7 @@ export default function Cardplace() {
 		<div>
 			<div className="container my-5">
 				<div className="row card-food-stay">
-					<div className="col-4 ">
+					<div className="col-12 col-md-4 mb-3">
 						<div className="position-relative rounded ">
 							<div className="looknum d-flex align-items-center position-absolute top-0 start-0 ">
 								<Image src={love} alt="icon" />
@@ -55,7 +55,7 @@ export default function Cardplace() {
 							</div>
 						</div>
 					</div>
-					<div className="col-4 ">
+					<div className="col-12 col-md-4 mb-3">
 						<div className="position-relative rounded ">
 							<div className="looknum d-flex align-items-center position-absolute top-0 start-0 ">
 								<Image src={love} alt="icon" />
@@ -96,7 +96,7 @@ export default function Cardplace() {
 							</div>
 						</div>
 					</div>
-					<div className="col-4 ">
+					<div className="cols-12 col-md-4 mb-3">
 						<div className="position-relative rounded ">
 							<div className="looknum d-flex align-items-center position-absolute top-0 start-0 ">
 								<Image src={love} alt="icon" />

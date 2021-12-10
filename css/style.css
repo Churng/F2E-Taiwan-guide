@@ -1,7 +1,9 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
     */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 html,
 body,
 div,
@@ -133,9 +135,15 @@ table {
   border-spacing: 0;
 }
 
+/**
+googlefont
+使用＠import
+*/
 body {
   margin: 0 auto;
   color: #4d4d4d;
+  font-family: "Noto Sans TC", sans-serif;
+  outline: none;
 }
 
 header .nav-link {
@@ -190,6 +198,12 @@ header .login-member {
   }
 }
 
+@media (min-width: 768px) {
+  .login .info {
+    width: 70%;
+  }
+}
+
 @media (min-width: 320px) {
   .login .register {
     width: 80%;
@@ -198,7 +212,13 @@ header .login-member {
 
 @media (min-width: 526px) {
   .login .register {
-    width: 60%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .login .register {
+    width: 70%;
   }
 }
 
@@ -209,15 +229,46 @@ header .login-member {
   border-radius: 5px;
 }
 
-.login .social {
-  width: 160px;
-  background-color: white;
-  border-radius: 10px;
-}
-
 @media (min-width: 320px) {
+  .login .social {
+    width: 120px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .login .social .icon {
+    width: 15px;
+    height: 15px;
+  }
   .login .bg-image {
     width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .login .social {
+    width: 160px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .login .social .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .login .social .socail-font {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login .social .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .login .social .socail-font {
+    font-size: 26px;
   }
 }
 
@@ -225,6 +276,68 @@ header .login-member {
   .login .bg-image {
     width: 40vw;
   }
+}
+
+.login .input-group-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  white-space: nowrap;
+  background-color: white;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  border-radius: 0px;
+}
+
+.login .input-group
+> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.login .input-group > .form-control,
+.login .input-group > .form-select {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+}
+
+.login .form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 main main .contain {
@@ -237,8 +350,17 @@ main .weatherbar {
   margin-top: -1px;
 }
 
-main .weatherbar .title {
-  width: 43em;
+@media (min-width: 320px) {
+  main .weatherbar .title {
+    width: 12em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  main .weatherbar .title {
+    width: 43em;
+  }
 }
 
 main .shadow-box:hover {
@@ -280,13 +402,27 @@ main .shadow-box:hover {
   color: white;
 }
 
-.cardplace .looknum {
-  background-color: white;
-  width: 40%;
-  padding: 0.4em 0.5em;
-  border-radius: 50px;
-  z-index: 1;
-  margin: 1em;
+@media (min-width: 320px) {
+  .cardplace .looknum {
+    background-color: white;
+    width: 40%;
+    padding: 0.4em 0.5em;
+    border-radius: 50px;
+    z-index: 1;
+    margin: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .cardplace .looknum {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardplace .looknum {
+    width: 50%;
+  }
 }
 
 .cardplace .book {
@@ -322,13 +458,27 @@ main .shadow-box:hover {
   padding-bottom: calc(100% / 8 * 9);
 }
 
-.card-food-stay .looknum {
-  background-color: white;
-  width: 40%;
-  padding: 0.4em 0.5em;
-  border-radius: 50px;
-  z-index: 1;
-  margin: 1em;
+@media (min-width: 320px) {
+  .card-food-stay .looknum {
+    background-color: white;
+    width: 40%;
+    padding: 0.4em 0.5em;
+    border-radius: 50px;
+    z-index: 1;
+    margin: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-food-stay .looknum {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-food-stay .looknum {
+    width: 50%;
+  }
 }
 
 .card-food-stay .book {
@@ -399,5 +549,69 @@ main .shadow-box:hover {
   left: 40%;
   font-size: 20px;
   color: gray;
+}
+
+.place .form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0.25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.place .input-group > .form-control,
+.place .input-group > .form-select {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+}
+
+.place .input-group-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  white-space: nowrap;
+  background-color: white;
+  border: 1px solid white;
+  border-right: 1px;
+  border-top: 1px;
+  border-left: 1px;
+  border-radius: 0.25rem;
+}
+
+.place .search {
+  width: 160px;
+  padding: 6px;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid white;
+  border-radius: 0.25rem;
 }
 /*# sourceMappingURL=style.css.map */

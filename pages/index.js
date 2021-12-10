@@ -26,8 +26,15 @@ export default function Home() {
 			<main>
 				<Header />
 				<main>
-					<div className="contain">
-						<Image src={banner} layout="responsive" alt="photo" className="d-block" />
+					<div className="contain d-none d-md-block ">
+						<Image src={banner} layout="responsive" alt="photo" className="" />
+					</div>
+
+					<div
+						style={{ position: "relative", width: "100%", height: "500px" }}
+						className="contain d-block d-md-none "
+					>
+						<Image src={banner} layout="fill" objectFit="cover" alt="photo" className="" />
 					</div>
 
 					<div className="weatherbar d-flex flex-column  align-items-center">
@@ -40,22 +47,22 @@ export default function Home() {
 
 					<div className="container">
 						<div className="row">
-							<div className="col-3 px-2 ">
+							<div className="col-6 col-md-3 px-2 ">
 								<div className="shadow-box d-flex justify-content-center">
 									<Image src={attraction} alt="photo" />
 								</div>
 							</div>
-							<div className="col-3 px-2">
+							<div className="col-6 col-md-3 px-2">
 								<div className="shadow-box d-flex justify-content-center">
 									<Image src={food} alt="photo" />
 								</div>
 							</div>
-							<div className="col-3 px-2">
+							<div className="col-6 col-md-3 px-2">
 								<div className="shadow-box d-flex justify-content-center">
 									<Image src={accommodation} alt="photo" />
 								</div>
 							</div>
-							<div className="col-3 px-2">
+							<div className=" col-6 col-md-3 px-2">
 								<div className="shadow-box d-flex justify-content-center">
 									<Image src={traffic} alt="photo" />
 								</div>
@@ -67,7 +74,11 @@ export default function Home() {
 						<div className="container-fluid card-group mt-5">
 							<div className="w-100 d-flex justify-content-between py-2 px-3">
 								<p className="fs-2 fw-bold">熱門景點</p>
-								<Button variant="outline-light">查看更多</Button>
+								<Link href="/place">
+									<a>
+										<Button variant="outline-light">查看更多</Button>
+									</a>
+								</Link>
 							</div>
 						</div>
 						<Cardplace />

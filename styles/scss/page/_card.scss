@@ -21,13 +21,25 @@
 // card-place
 
 .cardplace {
-	.looknum {
-		background-color: rgb(255, 255, 255);
-		width: 40%;
-		padding: 0.4em 0.5em;
-		border-radius: 50px;
-		z-index: 1;
-		margin: 1em;
+	@media (min-width: 320px) {
+		.looknum {
+			background-color: rgb(255, 255, 255);
+			width: 40%;
+			padding: 0.4em 0.5em;
+			border-radius: 50px;
+			z-index: 1;
+			margin: 1em;
+		}
+	}
+	@media (min-width: 768px) {
+		.looknum {
+			width: 60%;
+		}
+	}
+	@media (min-width: 1024px) {
+		.looknum {
+			width: 50%;
+		}
 	}
 
 	.book {
@@ -63,13 +75,25 @@
 // card-food-stay
 
 .card-food-stay {
-	.looknum {
-		background-color: rgb(255, 255, 255);
-		width: 40%;
-		padding: 0.4em 0.5em;
-		border-radius: 50px;
-		z-index: 1;
-		margin: 1em;
+	@media (min-width: 320px) {
+		.looknum {
+			background-color: rgb(255, 255, 255);
+			width: 40%;
+			padding: 0.4em 0.5em;
+			border-radius: 50px;
+			z-index: 1;
+			margin: 1em;
+		}
+	}
+	@media (min-width: 768px) {
+		.looknum {
+			width: 60%;
+		}
+	}
+	@media (min-width: 1024px) {
+		.looknum {
+			width: 50%;
+		}
 	}
 
 	.book {
