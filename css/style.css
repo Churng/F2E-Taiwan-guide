@@ -447,14 +447,16 @@ main .shadow-box:hover {
   color: white;
   background-color: #00000066;
   position: ABSOLUTE;
-  bottom: 3px;
+  bottom: 0;
   padding: 10px;
   border-radius: 0 0 30px 30px;
   overflow: hidden;
 }
 
-.cardplace .photo {
+.cardplace .photo,
+.cardplace .placephoto {
   width: 100%;
+  border-radius: 30px;
   padding-bottom: calc(100% / 8 * 9);
 }
 
@@ -511,6 +513,20 @@ main .shadow-box:hover {
 .card-food-stay .name .title,
 .card-food-stay .name .location {
   color: gray;
+}
+
+.card-kol .name {
+  padding: 20px 10px 5px 10px;
+  height: 170px;
+}
+
+.card-kol .name .title {
+  color: #4d4d4d;
+}
+
+.card-kol .name .subtitle {
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .mySwiper {

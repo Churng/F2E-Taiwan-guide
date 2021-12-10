@@ -60,14 +60,16 @@
 		color: white;
 		background-color: #00000066;
 		position: ABSOLUTE;
-		bottom: 3px;
+		bottom: 0;
 		padding: 10px;
 		border-radius: 0 0 30px 30px;
 		overflow: hidden;
 	}
 
-	.photo {
+	.photo,
+	.placephoto {
 		width: 100%;
+		border-radius: 30px;
 		padding-bottom: calc(100% / 8 * 9);
 	}
 }
@@ -121,6 +123,22 @@
 		.title,
 		.location {
 			color: $ColorFont-200;
+		}
+	}
+}
+
+// card-kol
+
+.card-kol {
+	.name {
+		padding: 20px 10px 5px 10px;
+		height: 170px;
+		.title {
+			color: $ColorFont-300;
+		}
+		.subtitle {
+			font-size: 12px;
+			line-height: 1.5;
 		}
 	}
 }
