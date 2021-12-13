@@ -18,7 +18,7 @@ export default function header({ children }) {
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link href="#">
+						<Link href="/place">
 							<a className="nav-link">景點</a>
 						</Link>
 					</li>
