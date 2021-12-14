@@ -15,7 +15,7 @@ export default function Cardplaceinside() {
 			<div className="container my-5">
 				<div className="row cardplace">
 					<div className="col-12 col-md-4 mb-3">
-						<Link href="/place/spot">
+						<Link href="/place/hotspot">
 							<a>
 								<div className="position-relative rounded ">
 									<div className="looknum d-flex align-items-center position-absolute top-0 start-0 ">
